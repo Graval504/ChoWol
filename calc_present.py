@@ -46,7 +46,7 @@ def calc_game():
             print(f"길이가 맞지 않음! (필요 길이:{NUM_TILE}, 입력된 길이:{len(CHOWOL_MAP)})")
             CHOWOL_MAP = input("타일 입력 :")
         while CHOWOL_MAP.count('.') != NUM_TILE-NUM_SPECIAL_TILE:
-            print(f"특수타일 개수가 맞지 않음! (필요 개수:{NUM_SPECIAL_TILE}, 입력된 개수:{len(NUM_TILE-CHOWOL_MAP.count('.'))})")
+            print(f"특수타일 개수가 맞지 않음! (필요 개수:{NUM_SPECIAL_TILE}, 입력된 개수:{NUM_TILE-CHOWOL_MAP.count('.')})")
             CHOWOL_MAP = input("타일 입력 :")
     else:
         TURN_LIMIT = int(input("남은 턴 수:"))
