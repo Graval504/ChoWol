@@ -54,7 +54,7 @@ def calc_game():
         
     while True:
         cur_prob, expected_push = calc_chowol(DICE[PITINESS],TURN_LIMIT,CHOWOL_MAP, num_w)
-        cur_result = cur_prob*(expected_push*GOLD_PUSH)+(1-cur_prob)*(GOLD_RESET + E_PARTS[LEVEL-1][-(COUNT_RESET+2)] + GOLD_PUSH*expected_push)
+        cur_result = cur_prob*(expected_push*GOLD_PUSH)+(1-cur_prob)*(GOLD_RESET + E_PARTS[LEVEL-1][-(COUNT_RESET+2)] + GOLD_PUSH*TURN_LIMIT)
         print(f"현재 성공확률 : {cur_prob}")
         print(f"현재 기대비용 : {cur_result}, 복원 없이 성공시 누골 : {expected_push*GOLD_PUSH}")
         print(f"복원시 기대비용 : {GOLD_RESET + E_PARTS[LEVEL-1][-(COUNT_RESET+2)]}")
