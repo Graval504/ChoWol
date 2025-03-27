@@ -33,8 +33,8 @@ DICE = [
 
 # gold_push, gold_reset
 PRICE =[
-    (190, 2200),
-    (110, 740)
+    (125, 1460),
+    (75, 510)
 ]
 
 # reference by https://m-lostark.game.onstove.com/GameGuide/Pages/%EC%B4%88%EC%9B%94
